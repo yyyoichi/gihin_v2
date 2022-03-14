@@ -1,3 +1,6 @@
+from request.framework.Speech import Speech
+
+
 class SpeechRecode :
     def __init__(self, speech_recode) -> None:
         self.speech_recode = speech_recode
@@ -121,12 +124,13 @@ class SpeechRecode :
         """
         return self.speech_recode["speakerRole"]
 
-    def speech(self) -> str:
+    def speech(self) -> Speech:
         """
         Returns:
             str: 発言
         """
-        return self.speech_recode["speech"]
+        s = self.speech_recode["speech"]
+        return Speech(s)
 
     def startPage(self) -> str:
         """
