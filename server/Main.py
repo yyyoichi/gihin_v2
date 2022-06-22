@@ -13,7 +13,7 @@ maker.maximumRecords("30")#30コ取得
 maker.nameOfHouse("参議院")
 maker.recordPacking("json")
 # maker.from_("2021-01-01")
-maker.until("2020-03-14")
+maker.until("2022-06-23")
 url = maker.getUrl()#設定したクエリをもつURLを取得する
 print(url)
 #議事録データを取得
